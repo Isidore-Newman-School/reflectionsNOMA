@@ -38,7 +38,7 @@
     </div>
     <div class="buttonBar">
       {% for item in site.data.samplelist.docs %}
-        <a href="{{ item.url }}"><button type="button" class="btn {% if item.url == page.url %}btn-primary{% else %}btn-secondary{% endif %}">{{ item.title }}</button></a>
+        <a href="{{site.baseurl}}{{ item.url }}"><button type="button" class="btn {% if item.url == page.url %}btn-primary{% else %}btn-secondary{% endif %}">{{ item.title }}</button></a>
       {% endfor %}
     </div>
     <hr>
